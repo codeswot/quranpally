@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.quranpally"
+    namespace = "com.ululalbab.quranpally"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 

@@ -3,7 +3,7 @@ flutter_native_splash:
   color: "#491702"
   
   image: assets/brand/logo.png
-  # branding: assets/branding-development.png
+  branding: assets/brand/logo.png
   # color_dark: "#491702"
   # image_dark: assets/logo-development.png
   # branding_dark: assets/branding-development.png
