@@ -22,7 +22,7 @@ class SSOLoginCard extends StatelessWidget {
         width: 60.w,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10.r),
-            color: AppColors.ssoLoginCardColor),
+            color: AppColors.colorECECEC),
         child: Center(
           child: AppImageWidget(reference: image),
         ),
