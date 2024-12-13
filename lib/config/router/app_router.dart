@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:quranpally/features/authentication/login/page/login.dart';
 import 'package:quranpally/features/onboarding/pages/pages.dart';
+import 'package:quranpally/features/authentication/register/pages/register.dart';
 
 part 'app_router.gr.dart';
 
@@ -16,6 +18,12 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: WelcomeRoute.page,
+        ),
+        AutoRoute(
+          page: LoginPageRoute.page,
+        ),
+        AutoRoute(
+          page: RegisterPageRoute.page,
         ),
       ];
   @override

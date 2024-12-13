@@ -46,3 +46,41 @@ class WelcomeRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+
+/// generated route for
+/// [loginPage]
+class LoginPageRoute extends PageRouteInfo<void> {
+  const LoginPageRoute({List<PageRouteInfo>? children})
+      : super(
+          LoginPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'loginPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LoginPage();
+    },
+  );
+}
+/// generated route for
+/// [loginPage]
+class RegisterPageRoute extends PageRouteInfo<void> {
+  const RegisterPageRoute({List<PageRouteInfo>? children})
+      : super(
+          RegisterPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'registerPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const RegisterPage();
+    },
+  );
+}

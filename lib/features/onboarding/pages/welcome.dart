@@ -2,8 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/asset/app_assets.dart';
+import 'package:quranpally/config/router/app_router.dart';
 import 'package:quranpally/shared/widgets/app_button.dart';
 import 'package:quranpally/shared/widgets/widgets.dart';
+
+import '../../../shared/widgets/app_image.dart';
 
 @RoutePage()
 class WelcomePage extends StatelessWidget {
@@ -67,7 +70,7 @@ class _WelcomePageView extends StatelessWidget {
                   title: 'Login',
                   backgroundColor: const Color(0xffFF8400),
                   onTap: () {
-                    // context.router.push(const SignUpRoute());
+                    context.router.push(const LoginPageRoute());
                   },
                 ),
                 SizedBox(width: 30.w),
@@ -76,7 +79,7 @@ class _WelcomePageView extends StatelessWidget {
                   backgroundColor: const Color(0xffDEDEDE),
                   foregroundColor: const Color(0xff7A7B78),
                   onTap: () {
-                    // context.router.push(const SignUpRoute());
+                    context.router.push(const RegisterPageRoute());
                   },
                 ),
               ],
