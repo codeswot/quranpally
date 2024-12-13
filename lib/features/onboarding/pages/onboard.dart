@@ -143,7 +143,7 @@ class __OnboardingViewState extends State<_OnboardingView> {
                       child: OnboardingProgressIndicator(
                         progress: (currentIndex + 1) / onboardingItems.length,
                         onTap: () {
-                          if (currentIndex < onboardingItems.length - 1) {
+                          if (currentIndex < onboardingItems.length - 1) { 
                             setState(() {
                               currentIndex++;
                             });
