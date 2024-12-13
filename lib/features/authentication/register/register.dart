@@ -2,11 +2,11 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/config.dart';
-import 'package:quranpally/features/onboarding/widget/custom_text_form_field.dart';
-import 'package:quranpally/features/onboarding/widget/login_with_card.dart';
+import 'package:quranpally/features/authentication/widgets/custom_text_form_field.dart';
+import 'package:quranpally/features/authentication/widgets/ssologincard.dart';
+import 'package:quranpally/shared/widgets/app_button.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
-import '../../../shared/widgets/regiser_login_button.dart';
 
 @RoutePage()
 class RegisterPage extends StatelessWidget {
@@ -49,8 +49,8 @@ class __RegisterPageViewState extends State<_RegisterPageView> {
         Padding(
           padding: EdgeInsets.only(top: 90.h, left: 25.w, right: 25.w),
           child: SizedBox(
-            height: double.infinity.h,
-            width: double.infinity.w,
+            height: double.infinity.sh,
+            width: double.infinity.sw,
             child: SingleChildScrollView(
               child: Form(
                 child: Column(
@@ -113,9 +113,12 @@ class __RegisterPageViewState extends State<_RegisterPageView> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          LoginRegisterButton(
-                            onTapped: () {},
-                            text: 'Sign up',
+                          AppPrimaryButton(
+                            height: 60.h,
+                            width: 357.w,
+                            title: 'Sign in',
+                            backgroundColor: const Color(0xFFFF8400),
+                            onTap: () {},
                           ),
                           InkWell(
                             onTap: () {
@@ -153,15 +156,15 @@ class __RegisterPageViewState extends State<_RegisterPageView> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.googleIcon,
                                 onTapped: () {},
                               ),
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.facebookIcon,
                                 onTapped: () {},
                               ),
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.appleIcon,
                                 onTapped: () {},
                               ),

@@ -1,10 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
-class LoginWithCard extends StatelessWidget {
-  const LoginWithCard({
+class SSOLoginCard extends StatelessWidget {
+  const SSOLoginCard({
     super.key,
     required this.image,
     required this.onTapped,
@@ -20,8 +21,8 @@ class LoginWithCard extends StatelessWidget {
         height: 44.h,
         width: 60.w,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: const Color(0xFFECECEC)),
+            borderRadius: BorderRadius.circular(10.r),
+            color: AppColors.ssoLoginCardColor),
         child: Center(
           child: AppImageWidget(reference: image),
         ),

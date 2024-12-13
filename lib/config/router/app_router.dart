@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:quranpally/features/onboarding/pages/login.dart';
+import 'package:quranpally/features/authentication/login/login.dart';
 import 'package:quranpally/features/onboarding/pages/pages.dart';
-import 'package:quranpally/features/onboarding/pages/register.dart';
+import 'package:quranpally/features/authentication/register/register.dart';
 
 part 'app_router.gr.dart';
 

@@ -17,7 +17,7 @@ class CustomTextFormField extends StatelessWidget {
       width: 357.w,
       decoration: BoxDecoration(
         color: const Color(0xFFE9E9E9),
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(10.r),
       ),
       child: TextFormField(
         keyboardType: TextInputType.emailAddress,
@@ -29,10 +29,10 @@ class CustomTextFormField extends StatelessWidget {
           ),
           border: InputBorder.none,
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: const BorderSide(
-              width: 2,
-              color:  Color(0xFFFF8400),
+            borderRadius: BorderRadius.circular(10.r),
+            borderSide:  BorderSide(
+              width: 2.w,
+              color:  const Color(0xFFFF8400),
             ),
           ),
           hintText: hintText,

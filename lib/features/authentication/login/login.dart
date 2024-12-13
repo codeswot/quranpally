@@ -2,9 +2,9 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/config.dart';
-import 'package:quranpally/features/onboarding/widget/custom_text_form_field.dart';
-import 'package:quranpally/features/onboarding/widget/login_with_card.dart';
-import 'package:quranpally/shared/widgets/regiser_login_button.dart';
+import 'package:quranpally/features/authentication/widgets/custom_text_form_field.dart';
+import 'package:quranpally/features/authentication/widgets/ssologincard.dart';
+import 'package:quranpally/shared/widgets/app_button.dart';
 import 'package:quranpally/shared/shared.dart';
 
 @RoutePage()
@@ -49,8 +49,8 @@ class __LoginPageViewState extends State<_LoginPageView> {
         Padding(
           padding: EdgeInsets.only(top: 77.h, left: 25.w, right: 25.w),
           child: SizedBox(
-            height: double.infinity.h,
-            width: double.infinity.w,
+            height: double.infinity.sh,
+            width: double.infinity.sw,
             child: SingleChildScrollView(
               child: Form(
                 child: Column(
@@ -125,13 +125,14 @@ class __LoginPageViewState extends State<_LoginPageView> {
                             height: 131.h,
                             width: 357.w,
                             child: Column(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceAround,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                LoginRegisterButton(
-                                  onTapped: () {},
-                                  text: 'Sign in',
-                                ),
+                                AppPrimaryButton(
+                                    height: 60.h,
+                                    width: 357.w,
+                                    backgroundColor: const Color(0xFFFF8400),
+                                    title: 'Sign in',
+                                    onTap: () {}),
                                 InkWell(
                                   onTap: () {
                                     context.router.push(
@@ -170,15 +171,15 @@ class __LoginPageViewState extends State<_LoginPageView> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.googleIcon,
                                 onTapped: () {},
                               ),
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.facebookIcon,
                                 onTapped: () {},
                               ),
-                              LoginWithCard(
+                              SSOLoginCard(
                                 image: AppAssets.appleIcon,
                                 onTapped: () {},
                               ),
