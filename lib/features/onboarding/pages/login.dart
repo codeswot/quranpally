@@ -29,173 +29,171 @@ class _LoginPageView extends StatefulWidget {
 class __LoginPageViewState extends State<_LoginPageView> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Stack(
-        children: [
-          Positioned(
-            bottom: -25.h,
-            left: 0,
-            child: const AppImageWidget(
-              reference: AppAssets.authdownline1,
-            ),
+    return Stack(
+      children: [
+        Positioned(
+          bottom: -25.h,
+          left: 0,
+          child: const AppImageWidget(
+            reference: AppAssets.authdownline1,
           ),
-          Positioned(
-            bottom: 0.h,
-            left: -15,
-            child: const AppImageWidget(
-              reference: AppAssets.authdownline2,
-            ),
+        ),
+        Positioned(
+          bottom: 0.h,
+          left: -25,
+          child: const AppImageWidget(
+            reference: AppAssets.authdownline2,
           ),
-          //
-          Padding(
-            padding: EdgeInsets.only(top: 77.h, left: 25.w, right: 25.w),
-            child: SizedBox(
-              height: double.infinity.h,
-              width: double.infinity.w,
-              child: SingleChildScrollView(
-                child: Form(
-                  child: Column(
-                    children: [
-                      SizedBox(
-                        height: 88.h,
-                        width: 390.w,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            Text(
-                              'Login here',
-                              style: TextStyle(
-                                color: const Color(0xff491702),
-                                fontSize: 24.sp,
-                                fontWeight: FontWeight.w700,
-                              ),
+        ),
+        //
+        Padding(
+          padding: EdgeInsets.only(top: 77.h, left: 25.w, right: 25.w),
+          child: SizedBox(
+            height: double.infinity.h,
+            width: double.infinity.w,
+            child: SingleChildScrollView(
+              child: Form(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 88.h,
+                      width: 390.w,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Text(
+                            'Login here',
+                            style: TextStyle(
+                              color: const Color(0xff491702),
+                              fontSize: 24.sp,
+                              fontWeight: FontWeight.w700,
                             ),
-                            Text(
-                              textAlign: TextAlign.center,
-                              "We're glad to have you return. Let’s continue your journey of reflection and connection.",
-                              style: TextStyle(
-                                color: const Color(0xff181C32),
-                                fontSize: 14.sp,
-                                fontWeight: FontWeight.w700,
-                              ),
+                          ),
+                          Text(
+                            textAlign: TextAlign.center,
+                            "We're glad to have you return. Let’s continue your journey of reflection and connection.",
+                            style: TextStyle(
+                              color: const Color(0xff181C32),
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w700,
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
-                      //
-                      SizedBox(height: 90.h),
-                      SizedBox(
-                        height: 369.h,
-                        width: 357.w,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            SizedBox(
-                              height: 157.h,
-                              width: 357.w,
-                              child: Column(
-                                children: [
-                                  const CustomTextFormField(
-                                    hintText: 'Email',
-                                    obscureText: false,
-                                  ),
-                                  SizedBox(height: 20.h),
-                                  const CustomTextFormField(
-                                    hintText: 'Password',
-                                    obscureText: true,
-                                  )
-                                ],
-                              ),
-                            ),
-                            Align(
-                              alignment: Alignment.centerRight,
-                              child: InkWell(
-                                onTap: () {},
-                                child: Text(
-                                  'Forgot your password?',
-                                  style: TextStyle(
-                                    color: const Color(0xFFFF8400),
-                                    fontSize: 14.sp,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            //
-                            SizedBox(
-                              height: 131.h,
-                              width: 357.w,
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                children: [
-                                  LoginRegisterButton(
-                                    onTapped: () {},
-                                    text: 'Sign in',
-                                  ),
-                                  InkWell(
-                                    onTap: () {
-                                      context.router.push(
-                                        const RegisterPageRoute(),
-                                      );
-                                    },
-                                    child: Text(
-                                      'Create new account',
-                                      style: TextStyle(
-                                          fontSize: 14.sp,
-                                          fontWeight: FontWeight.w700,
-                                          color: const Color(0xFF494949)),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                      SizedBox(height: 50.h),
-                      SizedBox(
-                        width: 200.w,
-                        height: 85.h,
-                        child: Column(
-                          children: [
-                            Text(
-                              'Or continue with',
-                              style: TextStyle(
-                                fontSize: 14.sp,
-                                fontWeight: FontWeight.w700,
-                                color: const Color(0xFFFF8400),
-                              ),
-                            ),
-                            SizedBox(height: 15.h),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    ),
+                    //
+                    SizedBox(height: 90.h),
+                    SizedBox(
+                      height: 369.h,
+                      width: 357.w,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SizedBox(
+                            height: 157.h,
+                            width: 357.w,
+                            child: Column(
                               children: [
-                                LoginWithCard(
-                                  image: AppAssets.googleIcon,
-                                  onTapped: () {},
+                                const CustomTextFormField(
+                                  hintText: 'Email',
+                                  obscureText: false,
                                 ),
-                                LoginWithCard(
-                                  image: AppAssets.facebookIcon,
-                                  onTapped: () {},
+                                SizedBox(height: 20.h),
+                                const CustomTextFormField(
+                                  hintText: 'Password',
+                                  obscureText: true,
+                                )
+                              ],
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: InkWell(
+                              onTap: () {},
+                              child: Text(
+                                'Forgot your password?',
+                                style: TextStyle(
+                                  color: const Color(0xFFFF8400),
+                                  fontSize: 14.sp,
+                                  fontWeight: FontWeight.w700,
                                 ),
-                                LoginWithCard(
-                                  image: AppAssets.appleIcon,
+                              ),
+                            ),
+                          ),
+                          //
+                          SizedBox(
+                            height: 131.h,
+                            width: 357.w,
+                            child: Column(
+                              mainAxisAlignment:
+                                  MainAxisAlignment.spaceAround,
+                              children: [
+                                LoginRegisterButton(
                                   onTapped: () {},
+                                  text: 'Sign in',
+                                ),
+                                InkWell(
+                                  onTap: () {
+                                    context.router.push(
+                                      const RegisterPageRoute(),
+                                    );
+                                  },
+                                  child: Text(
+                                    'Create new account',
+                                    style: TextStyle(
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xFF494949)),
+                                  ),
                                 ),
                               ],
-                            )
-                          ],
-                        ),
+                            ),
+                          )
+                        ],
                       ),
-                    ],
-                  ),
+                    ),
+                    SizedBox(height: 50.h),
+                    SizedBox(
+                      width: 200.w,
+                      height: 85.h,
+                      child: Column(
+                        children: [
+                          Text(
+                            'Or continue with',
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w700,
+                              color: const Color(0xFFFF8400),
+                            ),
+                          ),
+                          SizedBox(height: 15.h),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              LoginWithCard(
+                                image: AppAssets.googleIcon,
+                                onTapped: () {},
+                              ),
+                              LoginWithCard(
+                                image: AppAssets.facebookIcon,
+                                onTapped: () {},
+                              ),
+                              LoginWithCard(
+                                image: AppAssets.appleIcon,
+                                onTapped: () {},
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
