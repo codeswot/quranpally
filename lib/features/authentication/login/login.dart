@@ -132,7 +132,10 @@ class __LoginPageViewState extends State<_LoginPageView> {
                                     width: 357.w,
                                     backgroundColor: const Color(0xFFFF8400),
                                     title: 'Sign in',
-                                    onTap: () {}),
+                                    onTap: () {
+                                      context.router
+                                          .push(const HomePageRoute());
+                                    }),
                                 InkWell(
                                   onTap: () {
                                     context.router.push(

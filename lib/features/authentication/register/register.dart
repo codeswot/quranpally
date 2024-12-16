@@ -7,7 +7,6 @@ import 'package:quranpally/features/authentication/widgets/ssologincard.dart';
 import 'package:quranpally/shared/widgets/app_button.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
-
 @RoutePage()
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});

@@ -67,7 +67,7 @@ class LoginPageRoute extends PageRouteInfo<void> {
   );
 }
 /// generated route for
-/// [loginPage]
+/// [RegisterPage]
 class RegisterPageRoute extends PageRouteInfo<void> {
   const RegisterPageRoute({List<PageRouteInfo>? children})
       : super(
@@ -81,6 +81,46 @@ class RegisterPageRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const RegisterPage();
+    },
+  );
+}
+
+
+/// generated route for
+/// [HomePage]
+class HomePageRoute extends PageRouteInfo<void> {
+  const HomePageRoute({List<PageRouteInfo>? children})
+      : super(
+          HomePageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'homePageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HomePage();
+    },
+  );
+}
+
+
+/// generated route for
+/// [NotificationPage]
+class NotificationPageRoute extends PageRouteInfo<void> {
+  const NotificationPageRoute({List<PageRouteInfo>? children})
+      : super(
+          NotificationPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'notificationPAgeRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const NotificationPage();
     },
   );
 }
