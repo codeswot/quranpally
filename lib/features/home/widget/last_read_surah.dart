@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/asset/app_assets.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
 class LastReadSurah extends StatelessWidget {
@@ -18,7 +18,7 @@ class LastReadSurah extends StatelessWidget {
       width: 175.w,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15.r),
-        color: const Color(0xFF491702),
+        color: AppColors.color491702,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -34,7 +34,8 @@ class LastReadSurah extends StatelessWidget {
                 Center(
                   child: Text(
                     '1',
-                    style: TextStyle(color: Colors.white, fontSize: 8.sp),
+                    style:
+                        TextStyle(color: AppColors.colorFFFFFF, fontSize: 8.sp),
                   ),
                 )
               ],
@@ -54,7 +55,7 @@ class LastReadSurah extends StatelessWidget {
                       'Al-Fātiḥah',
                       style: TextStyle(
                         fontSize: 8.sp,
-                        color: Colors.white,
+                        color: AppColors.colorFFFFFF,
                       ),
                     ),
                     SizedBox(
@@ -64,7 +65,7 @@ class LastReadSurah extends StatelessWidget {
                       '(Pembuka)',
                       style: TextStyle(
                         fontSize: 8.sp,
-                        color: const Color(0xFFFF8400),
+                        color: AppColors.colorFF8400,
                       ),
                     ),
                   ],
@@ -75,12 +76,14 @@ class LastReadSurah extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const AppImageWidget(reference: AppAssets.makiyyaIcon),
+                      const AppImageWidget(
+                        reference: AppAssets.makiyyaIcon,
+                      ),
                       Text(
                         'Makiyyah',
                         style: TextStyle(
                           fontSize: 8.sp,
-                          color: Colors.white,
+                          color: AppColors.color828282,
                         ),
                       ),
                       const AppImageWidget(reference: AppAssets.bookIcon),
@@ -88,7 +91,7 @@ class LastReadSurah extends StatelessWidget {
                         '7 ayyat',
                         style: TextStyle(
                           fontSize: 8.sp,
-                          color: Colors.white,
+                          color: AppColors.color828282,
                         ),
                       ),
                     ],
@@ -100,7 +103,7 @@ class LastReadSurah extends StatelessWidget {
                     'الفاتحة',
                     style: TextStyle(
                       fontSize: 8.sp,
-                      color: const Color(0xFFFFFFFF),
+                      color: AppColors.colorFFFFFF,
                     ),
                   ),
                 ),

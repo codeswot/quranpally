@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/config.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/features/home/widget/home_search_bar.dart';
 import 'package:quranpally/features/home/widget/last_read_surah.dart';
 import 'package:quranpally/features/home/widget/reflection_card.dart';
@@ -54,7 +55,7 @@ class _HomePageView extends StatelessWidget {
                         icon: Image.asset(
                           AppAssets.searchIcon,
                           height: 13.30.h,
-                          color: const Color(0xFFFF8400),
+                          color: AppColors.colorFF8400,
                         ),
                       ),
                       //
@@ -89,7 +90,7 @@ class _HomePageView extends StatelessWidget {
                       Text(
                         'Last read',
                         style: TextStyle(
-                          color: const Color(0xFF181C32),
+                          color: AppColors.color181C32,
                           fontSize: 14.sp,
                           fontWeight: FontWeight.w700,
                         ),
@@ -172,14 +173,14 @@ class _HomePageView extends StatelessWidget {
                                     width: 36.w,
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(10.r),
-                                      color: const Color(0xFFFF8400),
+                                      color: AppColors.colorFF8400,
                                     ),
                                     child: Center(
                                       child: Text(
                                         'Post',
                                         style: TextStyle(
                                             fontSize: 11.sp,
-                                            color: Colors.white),
+                                            color: AppColors.colorFFFFFF),
                                       ),
                                     ),
                                   ),
@@ -202,7 +203,7 @@ class _HomePageView extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 14.sp,
                       fontWeight: FontWeight.w700,
-                      color: const Color(0xFF181C32)),
+                      color: AppColors.color181C32),
                 ),
               ),
               Column(

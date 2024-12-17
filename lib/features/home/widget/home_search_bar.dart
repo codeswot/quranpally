@@ -32,7 +32,7 @@ class HomeSearchBar extends StatelessWidget {
       child: TextField(
         decoration: InputDecoration(
           hintText: hintText,
-          hintStyle: const TextStyle(fontSize: 8),
+          hintStyle:  TextStyle(fontSize: 8,color: color),
           suffixIcon: InkWell(onTap: onTapped, child: icon),
           border: InputBorder.none,
           contentPadding:

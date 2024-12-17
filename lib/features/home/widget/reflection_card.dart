@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/asset/app_assets.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/shared/widgets/app_icon.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
@@ -43,7 +44,7 @@ class ReflectionCard extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w700,
-                              color: const Color(0xFFFF8400),
+                              color: AppColors.colorFF8400,
                             ),
                           ),
                           Text(
@@ -84,7 +85,7 @@ class ReflectionCard extends StatelessWidget {
               height: 125.h,
               padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 16.w),
               width: 390.w,
-              color: const Color(0xFF491702),
+              color: AppColors.color491702,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,7 +140,7 @@ class ReflectionCard extends StatelessWidget {
                           '553',
                           style: TextStyle(
                               fontSize: 10.sp,
-                              color: const Color(0xFF181C32),
+                              color: AppColors.color181C32,
                               fontWeight: FontWeight.w400),
                         )
                       ],
@@ -162,7 +163,7 @@ class ReflectionCard extends StatelessWidget {
                           '164',
                           style: TextStyle(
                               fontSize: 10.sp,
-                              color: const Color(0xFF181C32),
+                              color: AppColors.color181C32,
                               fontWeight: FontWeight.w400),
                         )
                       ],

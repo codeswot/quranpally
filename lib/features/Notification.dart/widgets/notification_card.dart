@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/asset/app_assets.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 
 class NotificationCard extends StatelessWidget {
@@ -33,7 +34,7 @@ class NotificationCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14.sp,
                   fontWeight: FontWeight.w700,
-                  color: const Color(0xFFFF8400),
+                  color: AppColors.colorFF8400,
                 ),
               ),
               Text(
@@ -41,7 +42,7 @@ class NotificationCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
-                  color: const Color(0xFF181C32),
+                  color: AppColors.color181C32,
                 ),
               ),
               Text(
@@ -49,7 +50,7 @@ class NotificationCard extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 8.sp,
                   fontWeight: FontWeight.w400,
-                  color: const Color(0xFF181C32),
+                  color: AppColors.color181C32,
                 ),
               ),
             ],
