@@ -47,7 +47,6 @@ class WelcomeRoute extends PageRouteInfo<void> {
   );
 }
 
-
 /// generated route for
 /// [loginPage]
 class LoginPageRoute extends PageRouteInfo<void> {
@@ -66,6 +65,7 @@ class LoginPageRoute extends PageRouteInfo<void> {
     },
   );
 }
+
 /// generated route for
 /// [RegisterPage]
 class RegisterPageRoute extends PageRouteInfo<void> {
@@ -84,7 +84,6 @@ class RegisterPageRoute extends PageRouteInfo<void> {
     },
   );
 }
-
 
 /// generated route for
 /// [HomePage]
@@ -105,7 +104,6 @@ class HomePageRoute extends PageRouteInfo<void> {
   );
 }
 
-
 /// generated route for
 /// [NotificationPage]
 class NotificationPageRoute extends PageRouteInfo<void> {
@@ -121,6 +119,120 @@ class NotificationPageRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const NotificationPage();
+    },
+  );
+}
+
+/// generated route for
+/// [MenuPage]
+class MenuPageRoute extends PageRouteInfo<void> {
+  const MenuPageRoute({List<PageRouteInfo>? children})
+      : super(
+          MenuPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'menuPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const MenuPage();
+    },
+  );
+}
+
+/// generated route for
+/// [MenuPage]
+class SettingsPageRoute extends PageRouteInfo<void> {
+  const SettingsPageRoute({List<PageRouteInfo>? children})
+      : super(
+          SettingsPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'settingsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const SettingsPage();
+    },
+  );
+}
+
+/// generated route for
+/// [PrivacyRoute]
+class PrivacyPageRoute extends PageRouteInfo<void> {
+  const PrivacyPageRoute({List<PageRouteInfo>? children})
+      : super(
+          PrivacyPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'settingsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PrivacyPage();
+    },
+  );
+}
+
+/// generated route for
+/// [PersonalInfoPageRoute]
+class PersonalInfoPageRoute extends PageRouteInfo<void> {
+  const PersonalInfoPageRoute({List<PageRouteInfo>? children})
+      : super(
+          PersonalInfoPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'settingsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const PersonInfoPage();
+    },
+  );
+}
+
+/// generated route for
+/// [AboutPageRoute]
+class AboutPageRoute extends PageRouteInfo<void> {
+  const AboutPageRoute({List<PageRouteInfo>? children})
+      : super(
+          AboutPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'AboutPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AboutPage();
+    },
+  );
+}
+
+/// generated route for
+/// [LAnguagePageRoute]
+class LAnguagePageRoute extends PageRouteInfo<void> {
+  const LAnguagePageRoute({List<PageRouteInfo>? children})
+      : super(
+          LAnguagePageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'LAnguagePageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const LanguagePage();
     },
   );
 }

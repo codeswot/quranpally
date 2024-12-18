@@ -68,7 +68,9 @@ class _HomePageView extends StatelessWidget {
                         child: Image.asset(AppAssets.notificationIcon),
                       ),
                       AppIcon(
-                        onTapped: () {},
+                        onTapped: () {
+                          context.router.push(const MenuPageRoute());
+                        },
                         width: 24.w,
                         height: 24.h,
                         child: Image.asset(AppAssets.menuIcon),
