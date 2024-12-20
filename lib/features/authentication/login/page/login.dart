@@ -50,7 +50,7 @@ class __LoginPageViewState extends State<_LoginPageView> {
         ),
         //
         Padding(
-          padding: EdgeInsets.only(top: 77.h, left: 25.w, right: 25.w),
+          padding: EdgeInsets.only(top: 30.h, left: 25.w, right: 25.w),
           child: SizedBox(
             height: 1.sh,
             width: 1.sw,

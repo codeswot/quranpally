@@ -143,7 +143,7 @@ class MenuPageRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [MenuPage]
+/// [SettingsPageRoute]
 class SettingsPageRoute extends PageRouteInfo<void> {
   const SettingsPageRoute({List<PageRouteInfo>? children})
       : super(
@@ -170,7 +170,7 @@ class PrivacyPageRoute extends PageRouteInfo<void> {
           initialChildren: children,
         );
 
-  static const String name = 'settingsPageRoute';
+  static const String name = 'PrivacyPageRoute';
 
   static PageInfo page = PageInfo(
     name,
@@ -189,7 +189,7 @@ class PersonalInfoPageRoute extends PageRouteInfo<void> {
           initialChildren: children,
         );
 
-  static const String name = 'settingsPageRoute';
+  static const String name = 'PersonalInfoPageRoute';
 
   static PageInfo page = PageInfo(
     name,
@@ -233,6 +233,82 @@ class LAnguagePageRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const LanguagePage();
+    },
+  );
+}
+
+/// generated route for
+/// [updatePageRoute]
+class UpdatePageRoute extends PageRouteInfo<void> {
+  const UpdatePageRoute({List<PageRouteInfo>? children})
+      : super(
+          UpdatePageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'UpdatePageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const UpdatePage();
+    },
+  );
+}
+
+/// generated route for
+/// [helpPageRoute]
+class HelpPageRoute extends PageRouteInfo<void> {
+  const HelpPageRoute({List<PageRouteInfo>? children})
+      : super(
+          HelpPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'HelpPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const HelpPage();
+    },
+  );
+}
+
+/// generated route for
+/// [reportPageRoute]
+class ReportPageRoute extends PageRouteInfo<void> {
+  const ReportPageRoute({List<PageRouteInfo>? children})
+      : super(
+          ReportPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ReportPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ReportProblePage();
+    },
+  );
+}
+
+/// generated route for
+/// [reportDescriptonPageRoute]
+class ReportDescriptionPageRoute extends PageRouteInfo<void> {
+  const ReportDescriptionPageRoute({List<PageRouteInfo>? children})
+      : super(
+          ReportDescriptionPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ReportDescriptionPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ReportDescriptionPage();
     },
   );
 }

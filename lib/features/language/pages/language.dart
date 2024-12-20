@@ -14,6 +14,7 @@ class LanguagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: AppColors.colorF9F9F9,
       body: _LanguagePageView(),
     );
   }
@@ -46,9 +47,7 @@ class _LanguagePageView extends StatelessWidget {
                   ),
                   const Text('Language'),
                   AppIcon(
-                    onTapped: () {
-                      context.router.push(const MenuPageRoute());
-                    },
+                    onTapped: () {},
                     child: const Text(
                       'Save',
                       style: TextStyle(

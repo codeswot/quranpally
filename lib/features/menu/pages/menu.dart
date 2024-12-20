@@ -222,7 +222,11 @@ class _MenuPageView extends StatelessWidget {
                       color: AppColors.color181C32,
                     ),
                     MenuCardWidget(
-                      onTapped: () {},
+                      onTapped: () {
+                        context.router.push(
+                          const UpdatePageRoute(),
+                        );
+                      },
                       height: 44.h,
                       width: 390.w,
                       icon: AppAssets.uploadIcon,
@@ -237,7 +241,11 @@ class _MenuPageView extends StatelessWidget {
                           color: AppColors.color181C32),
                     ),
                     MenuCardWidget(
-                      onTapped: () {},
+                      onTapped: () {
+                        context.router.push(
+                          const HelpPageRoute(),
+                        );
+                      },
                       height: 44.h,
                       width: 390.w,
                       icon: AppAssets.heplIcon,
@@ -245,7 +253,11 @@ class _MenuPageView extends StatelessWidget {
                       color: AppColors.color181C32,
                     ),
                     MenuCardWidget(
-                      onTapped: () {},
+                      onTapped: () {
+                        context.router.push(
+                          const ReportPageRoute(),
+                        );
+                      },
                       height: 44.h,
                       width: 390.w,
                       icon: AppAssets.reportIcon,

@@ -52,8 +52,9 @@ class AppAssets {
   static const policyIcon = "$_iconsPath/union-1 (10).png";
   static const arrowOutIcon = "$_iconsPath/Vector 2 (2).png";
   static const midiCameraIcon = "$_iconsPath/camera.png";
-  static const puzzleIcon = "$_iconsPath/camera.png";
-  static const messageIcon = "$_iconsPath/camera.png";
-  static const messageMoreIcon = "$_iconsPath/camera.png";
-  static const selectLanIcon = "$_iconsPath/user-02 (3).png";
+  static const puzzleIcon = "$_iconsPath/puzzle.png";
+  static const messageIcon = "$_iconsPath/message-1.png";
+  static const messageMoreIcon = "$_iconsPath/message-more.png";
+  static const selectLanIcon = "$_iconsPath/users-02 (3).png";
+  static const dragAddIcon = "$_iconsPath/Add image.png";
 }

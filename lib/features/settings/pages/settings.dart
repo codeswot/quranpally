@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/asset/app_assets.dart';
 import 'package:quranpally/config/router/app_router.dart';
 import 'package:quranpally/config/theme/app_colors.dart';
+import 'package:quranpally/features/settings/widget/settings_theme_card.dart';
 import 'package:quranpally/shared/widgets/app_icon.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 import 'package:quranpally/shared/widgets/bottom_nav_bar.dart';
@@ -148,11 +149,14 @@ class _SettingsPageView extends StatelessWidget {
                               height: 23.h,
                               width: 53.w,
                               child: Center(
-                                child: Text(
-                                  'Amiri',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14.sp,
+                                child: InkWell(
+                                  onTap: () {},
+                                  child: Text(
+                                    'Amiri',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14.sp,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -165,11 +169,14 @@ class _SettingsPageView extends StatelessWidget {
                               height: 23.h,
                               width: 88.w,
                               child: Center(
-                                child: Text(
-                                  'IndoPak',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14.sp,
+                                child: InkWell(
+                                  onTap: () {},
+                                  child: Text(
+                                    'IndoPak',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14.sp,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -177,11 +184,14 @@ class _SettingsPageView extends StatelessWidget {
                             SizedBox(
                               height: 23.h,
                               child: Center(
-                                child: Text(
-                                  'Tajweed',
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14.sp,
+                                child: InkWell(
+                                  onTap: () {},
+                                  child: Text(
+                                    'Tajweed',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 14.sp,
+                                    ),
                                   ),
                                 ),
                               ),
@@ -429,47 +439,3 @@ class _SettingsPageView extends StatelessWidget {
   }
 }
 
-class ThemeAndFontCard extends StatelessWidget {
-  const ThemeAndFontCard({
-    super.key,
-    this.color,
-    required this.text,
-    required this.onTapped,
-    required this.icon,
-  });
-  final Color? color;
-  final String text;
-  final VoidCallback onTapped;
-  final Widget? icon;
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTapped,
-      child: Container(
-        height: 23.h,
-        padding: EdgeInsets.symmetric(horizontal: 10.w),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8.r),
-          color: color,
-        ),
-        child: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              if (icon != null) icon!,
-              SizedBox(width: 5.w),
-              Text(
-                text,
-                style: TextStyle(
-                  fontWeight: FontWeight.w400,
-                  fontSize: 14.sp,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
