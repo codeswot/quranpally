@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quranpally/config/config.dart';
+import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/features/authentication/widgets/custom_text_form_field.dart';
 import 'package:quranpally/features/authentication/widgets/ssologincard.dart';
 import 'package:quranpally/shared/widgets/app_button.dart';
@@ -13,8 +14,10 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: _LoginPageView(),
+    return Scaffold(
+      appBar: AppBar(),
+      resizeToAvoidBottomInset: false,
+      body: const _LoginPageView(),
     );
   }
 }
@@ -47,10 +50,10 @@ class __LoginPageViewState extends State<_LoginPageView> {
         ),
         //
         Padding(
-          padding: EdgeInsets.only(top: 77.h, left: 25.w, right: 25.w),
+          padding: EdgeInsets.only(top: 30.h, left: 25.w, right: 25.w),
           child: SizedBox(
-            height: double.infinity.sh,
-            width: double.infinity.sw,
+            height: 1.sh,
+            width: 1.sw,
             child: SingleChildScrollView(
               child: Form(
                 child: Column(
@@ -64,7 +67,7 @@ class __LoginPageViewState extends State<_LoginPageView> {
                           Text(
                             'Login here',
                             style: TextStyle(
-                              color: const Color(0xff491702),
+                              color: AppColors.color491702,
                               fontSize: 24.sp,
                               fontWeight: FontWeight.w700,
                             ),
@@ -132,7 +135,11 @@ class __LoginPageViewState extends State<_LoginPageView> {
                                     width: 357.w,
                                     backgroundColor: const Color(0xFFFF8400),
                                     title: 'Sign in',
-                                    onTap: () {}),
+                                    onTap: () {
+                                      context.router.push(
+                                        const HomePageRoute(),
+                                      );
+                                    }),
                                 InkWell(
                                   onTap: () {
                                     context.router.push(
