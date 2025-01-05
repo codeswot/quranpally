@@ -1,5 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:quranpally/features/Notification.dart/page/notification.dart';
+import 'package:quranpally/features/Quran/page/quran.dart';
+import 'package:quranpally/features/QuranDetails/page/quran_details.dart';
+import 'package:quranpally/features/QuranDiscussVerse/pages/disscus_verse.dart';
 import 'package:quranpally/features/Report/pages/report_description.dart';
 import 'package:quranpally/features/Report/pages/report_proble.dart';
 import 'package:quranpally/features/about/pages/about.dart';
@@ -12,6 +15,7 @@ import 'package:quranpally/features/onboarding/pages/pages.dart';
 import 'package:quranpally/features/authentication/register/pages/register.dart';
 import 'package:quranpally/features/personal_info/page/personal_info.dart';
 import 'package:quranpally/features/privacy/pages/privacy.dart';
+import 'package:quranpally/features/quranReading/page/quran_reading.dart';
 import 'package:quranpally/features/settings/pages/settings.dart';
 import 'package:quranpally/features/update/pages/update.dart';
 
@@ -72,6 +76,18 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: ReportDescriptionPageRoute.page,
+        ),
+        AutoRoute(
+          page: QuranHomePageRoute.page,
+        ),
+        AutoRoute(
+          page: QuranReadingPageRoute.page,
+        ),
+        AutoRoute(
+          page: QuranDetailsPageRoute.page,
+        ),
+        AutoRoute(
+          page: QuranDiscussPageRoute.page,
         ),
       ];
   @override

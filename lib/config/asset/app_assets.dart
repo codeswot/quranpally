@@ -24,7 +24,7 @@ class AppAssets {
   static const likeIcon = "$_iconsPath/like_icon.png";
   static const commentIcon = "$_iconsPath/comment.png";
   static const shareIcon = "$_iconsPath/share_icon.png";
-  static const homeIcon = "$_iconsPath/home.png";
+  static const homeIcon = "$_iconsPath/hommeicon.png";
   static const bookIconn = "$_iconsPath/open_book.png";
   static const commentsIcon = "$_iconsPath/comments.png";
   static const profileIcon = "$_iconsPath/profile.png";
@@ -57,4 +57,23 @@ class AppAssets {
   static const messageMoreIcon = "$_iconsPath/message-more.png";
   static const selectLanIcon = "$_iconsPath/users-02 (3).png";
   static const dragAddIcon = "$_iconsPath/Add image.png";
+  static const lastReadIcon = "$_iconsPath/lastread.png";
+  static const dotImage = "$_iconsPath/dotimage.png";
+  static const cloudImage = "$_iconsPath/cloudimage.png";
+  static const quranImage = "$_iconsPath/Quran (2).png";
+  static const dottIcon = "$_iconsPath/Ellipse 2 (1).png";
+  static const quranBackImage = "$_imagesPath/Group (26).png";
+  static const bismillah = "$_imagesPath/bismillah.png";
+  static const playIcon = "$_iconsPath/play (2).png";
+  static const writeIcon = "$_iconsPath/write.png";
+  static const bookMarkicon = "$_iconsPath/bookmark.png";
+  static const bookMarkEmptyicon = "$_iconsPath/bookmarkempty.png";
+  static const copyIcon = "$_iconsPath/copy (1).png";
+  static const smallShareIcon = "$_iconsPath/material-symbols_share.png";
+  static const smallcopyIcon = "$_iconsPath/ph_copy-fill.png";
+  static const prevIcon = "$_iconsPath/previcon.png";
+  static const nextIcon = "$_iconsPath/nexticon.png";
+  static const alhmdllIcon = "$_iconsPath/alhmdllicon.png";
+  static const bigLikeIcon = "$_iconsPath/biglike.png";
+  static const bigCommentIcon = "$_iconsPath/bigcomment.png";
 }

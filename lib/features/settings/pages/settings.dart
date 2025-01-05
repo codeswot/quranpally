@@ -5,6 +5,7 @@ import 'package:quranpally/config/asset/app_assets.dart';
 import 'package:quranpally/config/router/app_router.dart';
 import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/features/settings/widget/settings_theme_card.dart';
+import 'package:quranpally/shared/enum/nav_bar_enums.dart';
 import 'package:quranpally/shared/widgets/app_icon.dart';
 import 'package:quranpally/shared/widgets/app_image.dart';
 import 'package:quranpally/shared/widgets/bottom_nav_bar.dart';
@@ -434,8 +435,9 @@ class _SettingsPageView extends StatelessWidget {
           ),
         ),
       ),
-      bottomNavigationBar: const BotNavBar(),
+      bottomNavigationBar: const BotNavBar(
+        selectedNav: BottomNavBarEnums.settings,
+      ),
     );
   }
 }
-

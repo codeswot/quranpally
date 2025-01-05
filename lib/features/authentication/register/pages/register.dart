@@ -125,6 +125,7 @@ class __RegisterPageViewState extends State<_RegisterPageView> {
                           ),
                           TextButton(
                             onPressed: () {
+                              
                               context.router.replace(
                                 const LoginPageRoute(),
                               );
