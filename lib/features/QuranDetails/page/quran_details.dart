@@ -726,181 +726,191 @@ class _QuranDetailsPageView extends StatelessWidget {
                             ),
                             //
                             //
-                            Container(
-                              padding: EdgeInsets.only(
-                                top: 10.h,
-                                left: 10.w,
-                                right: 10.w,
-                              ),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(11.0.r),
-                                color: AppColors.colorF3F3F5,
-                              ),
-                              width: 390.w,
-                              height: 192.h,
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceAround,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SizedBox(
-                                    height: 33.h,
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
-                                      children: [
-                                        Text(
-                                          'Posted in Al-Fatiha [1:1]',
-                                          style: TextStyle(
-                                            fontSize: 14.sp,
-                                            fontWeight: FontWeight.w400,
-                                            color: AppColors.color181C32,
+                            InkWell(
+                              onTap: () {
+                                context.router.replace(
+                                  const CommentOnAyaPageRoute(),
+                                );
+                              },
+                              child: Container(
+                                padding: EdgeInsets.only(
+                                  top: 10.h,
+                                  left: 10.w,
+                                  right: 10.w,
+                                ),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(11.0.r),
+                                  color: AppColors.colorF3F3F5,
+                                ),
+                                width: 390.w,
+                                height: 192.h,
+                                child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SizedBox(
+                                      height: 33.h,
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text(
+                                            'Posted in Al-Fatiha [1:1]',
+                                            style: TextStyle(
+                                              fontSize: 14.sp,
+                                              fontWeight: FontWeight.w400,
+                                              color: AppColors.color181C32,
+                                            ),
                                           ),
-                                        ),
-                                        Text(
-                                          '2 months ago',
-                                          style: TextStyle(
-                                            fontSize: 8.sp,
-                                            fontWeight: FontWeight.w400,
-                                            color: AppColors.color181C32,
+                                          Text(
+                                            '2 months ago',
+                                            style: TextStyle(
+                                              fontSize: 8.sp,
+                                              fontWeight: FontWeight.w400,
+                                              color: AppColors.color181C32,
+                                            ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 71.h,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceAround,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Could you addأَعُوذُ بِاللَّهِ مِنَ الشَّيْطانِ الرَّجِيْمِ  A'oothu billaahi minash-Shaytaanir-rajeem I seek refuge with Allah against the Satan, the outcast. as the first ayah in fatiha",
-                                          style: TextStyle(
-                                            fontSize: 12.sp,
-                                            fontWeight: FontWeight.w400,
+                                    SizedBox(
+                                      height: 71.h,
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceAround,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            "Could you addأَعُوذُ بِاللَّهِ مِنَ الشَّيْطانِ الرَّجِيْمِ  A'oothu billaahi minash-Shaytaanir-rajeem I seek refuge with Allah against the Satan, the outcast. as the first ayah in fatiha",
+                                            style: TextStyle(
+                                              fontSize: 12.sp,
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
-                                        ),
-                                        Text(
-                                          'Read more',
-                                          style: TextStyle(
-                                            fontSize: 8.sp,
-                                            fontWeight: FontWeight.w400,
-                                            decoration:
-                                                TextDecoration.underline,
-                                          ),
-                                        )
-                                      ],
+                                          Text(
+                                            'Read more',
+                                            style: TextStyle(
+                                              fontSize: 8.sp,
+                                              fontWeight: FontWeight.w400,
+                                              decoration:
+                                                  TextDecoration.underline,
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    height: 48.h,
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        SizedBox(
-                                          width: 160.w,
-                                          child: Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            children: [
-                                              AppImageWidget(
-                                                reference: AppAssets.userImage,
-                                                height: 48.h,
-                                                width: 48.w,
-                                                fit: BoxFit.fill,
-                                              ),
-                                              Text(
-                                                'Imrahn Samir',
-                                                style: TextStyle(
-                                                  fontSize: 14.sp,
-                                                  fontWeight: FontWeight.w500,
-                                                  color: AppColors.colorFF8400,
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          height: 24.h,
-                                          width: 106.w,
-                                          child: Center(
+                                    SizedBox(
+                                      height: 48.h,
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          SizedBox(
+                                            width: 160.w,
                                             child: Row(
                                               mainAxisAlignment:
                                                   MainAxisAlignment
                                                       .spaceBetween,
                                               children: [
-                                                SizedBox(
-                                                  height: 24.h,
+                                                AppImageWidget(
+                                                  reference:
+                                                      AppAssets.userImage,
+                                                  height: 48.h,
                                                   width: 48.w,
-                                                  child: Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      AppIcon(
-                                                        onTapped: () {},
-                                                        child:
-                                                            const AppImageWidget(
-                                                          reference: AppAssets
-                                                              .bigLikeIcon,
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        '120',
-                                                        style: TextStyle(
-                                                          fontSize: 12.sp,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          color: AppColors
-                                                              .color0071DB,
-                                                        ),
-                                                      )
-                                                    ],
-                                                  ),
+                                                  fit: BoxFit.fill,
                                                 ),
-                                                SizedBox(
-                                                  height: 24.h,
-                                                  width: 44.w,
-                                                  child: Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      AppIcon(
-                                                        onTapped: () {},
-                                                        child:
-                                                            const AppImageWidget(
-                                                          reference: AppAssets
-                                                              .bigCommentIcon,
-                                                        ),
-                                                      ),
-                                                      Text(
-                                                        '113',
-                                                        style: TextStyle(
-                                                          fontSize: 12.sp,
-                                                          fontWeight:
-                                                              FontWeight.w400,
-                                                          color: AppColors
-                                                              .color0071DB,
-                                                        ),
-                                                      ),
-                                                    ],
+                                                Text(
+                                                  'Imrahn Samir',
+                                                  style: TextStyle(
+                                                    fontSize: 14.sp,
+                                                    fontWeight: FontWeight.w500,
+                                                    color:
+                                                        AppColors.colorFF8400,
                                                   ),
                                                 ),
                                               ],
                                             ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ],
+                                          SizedBox(
+                                            height: 24.h,
+                                            width: 106.w,
+                                            child: Center(
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: [
+                                                  SizedBox(
+                                                    height: 24.h,
+                                                    width: 48.w,
+                                                    child: Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: [
+                                                        AppIcon(
+                                                          onTapped: () {},
+                                                          child:
+                                                              const AppImageWidget(
+                                                            reference: AppAssets
+                                                                .bigLikeIcon,
+                                                          ),
+                                                        ),
+                                                        Text(
+                                                          '120',
+                                                          style: TextStyle(
+                                                            fontSize: 12.sp,
+                                                            fontWeight:
+                                                                FontWeight.w400,
+                                                            color: AppColors
+                                                                .color0071DB,
+                                                          ),
+                                                        )
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    height: 24.h,
+                                                    width: 44.w,
+                                                    child: Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: [
+                                                        AppIcon(
+                                                          onTapped: () {},
+                                                          child:
+                                                              const AppImageWidget(
+                                                            reference: AppAssets
+                                                                .bigCommentIcon,
+                                                          ),
+                                                        ),
+                                                        Text(
+                                                          '113',
+                                                          style: TextStyle(
+                                                            fontSize: 12.sp,
+                                                            fontWeight:
+                                                                FontWeight.w400,
+                                                            color: AppColors
+                                                                .color0071DB,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                             //

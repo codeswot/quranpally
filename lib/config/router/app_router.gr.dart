@@ -351,7 +351,6 @@ class QuranReadingPageRoute extends PageRouteInfo<void> {
   );
 }
 
-
 /// generated route for
 /// [QuranDetailsPageRoute]
 class QuranDetailsPageRoute extends PageRouteInfo<void> {
@@ -386,6 +385,25 @@ class QuranDiscussPageRoute extends PageRouteInfo<void> {
     name,
     builder: (data) {
       return const DiscussVersePage();
+    },
+  );
+}
+
+/// generated route for
+/// [CommentOnAyaPageRoute]
+class CommentOnAyaPageRoute extends PageRouteInfo<void> {
+  const CommentOnAyaPageRoute({List<PageRouteInfo>? children})
+      : super(
+          CommentOnAyaPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommentOnAyaPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommentOnAyaPage();
     },
   );
 }

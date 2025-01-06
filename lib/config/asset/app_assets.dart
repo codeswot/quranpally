@@ -76,4 +76,5 @@ class AppAssets {
   static const alhmdllIcon = "$_iconsPath/alhmdllicon.png";
   static const bigLikeIcon = "$_iconsPath/biglike.png";
   static const bigCommentIcon = "$_iconsPath/bigcomment.png";
+  static const quranIcon = "$_iconsPath/quranIcon.png";
 }
