@@ -4,6 +4,9 @@ import 'package:quranpally/features/Notification.dart/page/notification.dart';
 import 'package:quranpally/features/Quran/page/quran.dart';
 import 'package:quranpally/features/QuranDetails/page/quran_details.dart';
 import 'package:quranpally/features/QuranDiscussVerse/pages/disscus_verse.dart';
+import 'package:quranpally/features/Reflection/Commentscetion/page/comment_section.dart';
+import 'package:quranpally/features/Reflection/Reflections/page/reflections.dart';
+import 'package:quranpally/features/Reflection/Replies/page/replies.dart';
 import 'package:quranpally/features/Report/pages/report_description.dart';
 import 'package:quranpally/features/Report/pages/report_proble.dart';
 import 'package:quranpally/features/about/pages/about.dart';
@@ -92,6 +95,15 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: CommentOnAyaPageRoute.page,
+        ),
+        AutoRoute(
+          page: ReflectionsRoutePage.page,
+        ),
+        AutoRoute(
+          page: CommentSectionRoutePage.page,
+        ),
+        AutoRoute(
+          page: RepliesPageRoute.page,
         ),
       ];
   @override

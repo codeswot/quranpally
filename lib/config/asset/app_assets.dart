@@ -77,4 +77,8 @@ class AppAssets {
   static const bigLikeIcon = "$_iconsPath/biglike.png";
   static const bigCommentIcon = "$_iconsPath/bigcomment.png";
   static const quranIcon = "$_iconsPath/quranIcon.png";
+  static const shuffleIcon = "$_iconsPath/shuffleicoon.png";
+  static const pauseAndPlayIcon = "$_iconsPath/pauseandplayicon.png";
+  static const repeatIcon = "$_iconsPath/repeat-icon.png";
+  static const audionIcon = "$_iconsPath/union-1 (12).png";
 }

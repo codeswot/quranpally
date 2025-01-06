@@ -54,11 +54,11 @@ class BotNavBar extends StatelessWidget {
               ),
             ),
             InkWell(
-              //     onTap: () {
-              //     context.router.push(
-              //       const HomePageRoute(),
-              //     );
-              //   },
+                  onTap: () {
+                  context.router.push(
+                    const ReflectionsRoutePage(),
+                  );
+                },
               child: Image.asset(
                 AppAssets.commentsIcon,
                 height: 24.h,

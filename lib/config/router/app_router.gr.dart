@@ -407,3 +407,61 @@ class CommentOnAyaPageRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [ReflectionsRoutePage]
+class ReflectionsRoutePage extends PageRouteInfo<void> {
+  const ReflectionsRoutePage({List<PageRouteInfo>? children})
+      : super(
+          ReflectionsRoutePage.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ReflectionsRoutePage';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ReflectionPage();
+    },
+  );
+}
+
+
+/// generated route for
+/// [CommentSectionRoutePage]
+class CommentSectionRoutePage extends PageRouteInfo<void> {
+  const CommentSectionRoutePage({List<PageRouteInfo>? children})
+      : super(
+          CommentSectionRoutePage.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommentSectionRoutePage';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommentSectionPage();
+    },
+  );
+}
+
+/// generated route for
+/// [RepliesPageRoute]
+class RepliesPageRoute extends PageRouteInfo<void> {
+  const RepliesPageRoute({List<PageRouteInfo>? children})
+      : super(
+          RepliesPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'RepliesPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const RepliesPage();
+    },
+  );
+}
