@@ -485,3 +485,80 @@ class ProfilePageRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [GroupsPageRoute]
+class GroupsPageRoute extends PageRouteInfo<void> {
+  const GroupsPageRoute({List<PageRouteInfo>? children})
+      : super(
+          GroupsPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'GroupsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const GroupsPage();
+    },
+  );
+}
+
+
+/// generated route for
+/// [CommunitiesPageRoute]
+class CommunitiesPageRoute extends PageRouteInfo<void> {
+  const CommunitiesPageRoute({List<PageRouteInfo>? children})
+      : super(
+          CommunitiesPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommunitiesPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommunitiesFeatures();
+    },
+  );
+}
+
+
+/// generated route for
+/// [FriendsPageRoute]
+class FriendsPageRoute extends PageRouteInfo<void> {
+  const FriendsPageRoute({List<PageRouteInfo>? children})
+      : super(
+          FriendsPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'FriendsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const FriendsPage();
+    },
+  );
+}
+/// generated route for
+/// [AddFriendsPageRoute]
+class AddFriendsPageRoute extends PageRouteInfo<void> {
+  const AddFriendsPageRoute({List<PageRouteInfo>? children})
+      : super(
+          AddFriendsPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'AddFriendsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const AddFriendPage();
+    },
+  );
+}

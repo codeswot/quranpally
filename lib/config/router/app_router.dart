@@ -1,5 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:quranpally/features/CommentOnAya/pages/comment_on_aya.dart';
+import 'package:quranpally/features/Friends/page/friends.dart';
+import 'package:quranpally/features/Friends/page/friends_two.dart';
+import 'package:quranpally/features/GroupsAndCommunities/Groups/page/communities.dart';
+import 'package:quranpally/features/GroupsAndCommunities/Groups/page/groups.dart';
 import 'package:quranpally/features/Notification.dart/page/notification.dart';
 import 'package:quranpally/features/Profile/page/profile.dart';
 import 'package:quranpally/features/Quran/page/quran.dart';
@@ -108,6 +112,18 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: ProfilePageRoute.page,
+        ),
+        AutoRoute(
+          page: GroupsPageRoute.page,
+        ),
+        AutoRoute(
+          page: CommunitiesPageRoute.page,
+        ),
+        AutoRoute(
+          page: FriendsPageRoute.page,
+        ),
+        AutoRoute(
+          page: AddFriendsPageRoute.page,
         ),
       ];
   @override

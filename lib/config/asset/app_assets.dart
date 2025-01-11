@@ -89,4 +89,15 @@ class AppAssets {
   static const follwersIcon4 = "$_iconsPath/followers icon (4).png";
   static const follwersIcon5 = "$_iconsPath/followers icon (5).png";
   static const follwersIcon6 = "$_iconsPath/followers icon (6).png";
+  static const addIcon = "$_iconsPath/plusicon.png";
+  static const rectangle1 = "$_iconsPath/Rectangle 20 (1).png";
+  static const rectangle2 = "$_iconsPath/Rectangle 20 (2).png";
+  static const rectangle3 = "$_iconsPath/Rectangle 20 (3).png";
+  static const rectangle4 = "$_iconsPath/Rectangle 20 (4).png";
+  static const quranPages = "$_imagesPath/Rectangle 20 (6).png";
+  static const worldIcon = "$_iconsPath/world.png";
+  static const cancelIcon = "$_iconsPath/x.png";
+  static const addUserIcon = "$_iconsPath/adduser.png";
+  static const friendsIcon = "$_iconsPath/friendsicon.png";
+  static const rectangleGrid = "$_imagesPath/Rectangle-grid.png";
 }
