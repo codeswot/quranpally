@@ -465,3 +465,23 @@ class RepliesPageRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+
+/// generated route for
+/// [ProfilePageRoute]
+class ProfilePageRoute extends PageRouteInfo<void> {
+  const ProfilePageRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfilePageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfilePageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ProfilePage();
+    },
+  );
+}

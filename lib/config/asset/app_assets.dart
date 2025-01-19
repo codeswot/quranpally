@@ -81,4 +81,12 @@ class AppAssets {
   static const pauseAndPlayIcon = "$_iconsPath/pauseandplayicon.png";
   static const repeatIcon = "$_iconsPath/repeat-icon.png";
   static const audionIcon = "$_iconsPath/union-1 (12).png";
+  static const profileChangeIcon = "$_iconsPath/profilechangeicon.png";
+  static const follwersIcon = "$_iconsPath/followers icon.png";
+  static const follwersIcon1 = "$_iconsPath/followers icon (1).png";
+  static const follwersIcon2 = "$_iconsPath/followers icon (2).png";
+  static const follwersIcon3 = "$_iconsPath/followers icon (3).png";
+  static const follwersIcon4 = "$_iconsPath/followers icon (4).png";
+  static const follwersIcon5 = "$_iconsPath/followers icon (5).png";
+  static const follwersIcon6 = "$_iconsPath/followers icon (6).png";
 }

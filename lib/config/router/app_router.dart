@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:quranpally/features/CommentOnAya/pages/comment_on_aya.dart';
 import 'package:quranpally/features/Notification.dart/page/notification.dart';
+import 'package:quranpally/features/Profile/page/profile.dart';
 import 'package:quranpally/features/Quran/page/quran.dart';
 import 'package:quranpally/features/QuranDetails/page/quran_details.dart';
 import 'package:quranpally/features/QuranDiscussVerse/pages/disscus_verse.dart';
@@ -104,6 +105,9 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(
           page: RepliesPageRoute.page,
+        ),
+        AutoRoute(
+          page: ProfilePageRoute.page,
         ),
       ];
   @override
