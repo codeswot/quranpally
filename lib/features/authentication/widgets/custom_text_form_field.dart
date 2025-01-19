@@ -10,7 +10,6 @@ class CustomTextFormField extends StatelessWidget {
   final String hintText;
 //   final TextEditingController controller;
   final bool obscureText;
-  
   @override
   Widget build(BuildContext context) {
     return Container(
