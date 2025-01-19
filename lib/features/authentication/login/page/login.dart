@@ -15,8 +15,8 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       appBar: AppBar(),
+      resizeToAvoidBottomInset: false,
       body: const _LoginPageView(),
     );
   }
@@ -50,7 +50,7 @@ class __LoginPageViewState extends State<_LoginPageView> {
         ),
         //
         Padding(
-          padding: EdgeInsets.only(left: 25.w, right: 25.w),
+          padding: EdgeInsets.only(top: 30.h, left: 25.w, right: 25.w),
           child: SizedBox(
             height: 1.sh,
             width: 1.sw,
@@ -59,6 +59,7 @@ class __LoginPageViewState extends State<_LoginPageView> {
                 child: Column(
                   children: [
                     SizedBox(
+                      height: 88.h,
                       width: 390.w,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -71,12 +72,11 @@ class __LoginPageViewState extends State<_LoginPageView> {
                               fontWeight: FontWeight.w700,
                             ),
                           ),
-                          SizedBox(height: 10.h),
                           Text(
                             textAlign: TextAlign.center,
                             "We're glad to have you return. Let’s continue your journey of reflection and connection.",
                             style: TextStyle(
-                              color: AppColors.color181C32,
+                              color: const Color(0xff181C32),
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w700,
                             ),
@@ -85,8 +85,9 @@ class __LoginPageViewState extends State<_LoginPageView> {
                       ),
                     ),
                     //
-                    SizedBox(height: 137.h),
+                    SizedBox(height: 90.h),
                     SizedBox(
+                      height: 369.h,
                       width: 357.w,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -110,12 +111,12 @@ class __LoginPageViewState extends State<_LoginPageView> {
                           ),
                           Align(
                             alignment: Alignment.centerRight,
-                            child: TextButton(
-                              onPressed: () {},
+                            child: InkWell(
+                              onTap: () {},
                               child: Text(
                                 'Forgot your password?',
                                 style: TextStyle(
-                                  color: AppColors.colorFF8400,
+                                  color: const Color(0xFFFF8400),
                                   fontSize: 14.sp,
                                   fontWeight: FontWeight.w700,
                                 ),
@@ -130,25 +131,27 @@ class __LoginPageViewState extends State<_LoginPageView> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 AppPrimaryButton(
-                                  height: 60.h,
-                                  width: 357.w,
-                                  backgroundColor: AppColors.colorFF8400,
-                                  title: 'Sign in',
-                                  onTap: () {},
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    context.router.replace(
+                                    height: 60.h,
+                                    width: 357.w,
+                                    backgroundColor: const Color(0xFFFF8400),
+                                    title: 'Sign in',
+                                    onTap: () {
+                                      context.router.push(
+                                        const HomePageRoute(),
+                                      );
+                                    }),
+                                InkWell(
+                                  onTap: () {
+                                    context.router.push(
                                       const RegisterPageRoute(),
                                     );
                                   },
                                   child: Text(
                                     'Create new account',
                                     style: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w700,
-                                      color: AppColors.color494949,
-                                    ),
+                                        fontSize: 14.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xFF494949)),
                                   ),
                                 ),
                               ],
@@ -168,7 +171,7 @@ class __LoginPageViewState extends State<_LoginPageView> {
                             style: TextStyle(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w700,
-                              color: AppColors.colorFF8400,
+                              color: const Color(0xFFFF8400),
                             ),
                           ),
                           SizedBox(height: 15.h),
