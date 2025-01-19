@@ -6,6 +6,7 @@ import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/features/home/widget/home_search_bar.dart';
 import 'package:quranpally/features/home/widget/last_read_surah.dart';
 import 'package:quranpally/features/home/widget/reflection_card.dart';
+import 'package:quranpally/shared/enum/nav_bar_enums.dart';
 import 'package:quranpally/shared/shared.dart';
 import 'package:quranpally/shared/widgets/app_icon.dart';
 import 'package:quranpally/shared/widgets/bottom_nav_bar.dart';
@@ -223,7 +224,9 @@ class _HomePageView extends StatelessWidget {
       ),
       //
       //
-      bottomNavigationBar: const BotNavBar(),
+      bottomNavigationBar: const BotNavBar(
+        selectedNav: BottomNavBarEnums.home,
+      ),
     );
   }
 }

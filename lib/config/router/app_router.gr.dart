@@ -312,3 +312,156 @@ class ReportDescriptionPageRoute extends PageRouteInfo<void> {
     },
   );
 }
+
+/// generated route for
+/// [QuranHomePageRoute]
+class QuranHomePageRoute extends PageRouteInfo<void> {
+  const QuranHomePageRoute({List<PageRouteInfo>? children})
+      : super(
+          QuranHomePageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'QuranHomePageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const QuranHomePage();
+    },
+  );
+}
+
+/// generated route for
+/// [QuranReadingPageRoute]
+class QuranReadingPageRoute extends PageRouteInfo<void> {
+  const QuranReadingPageRoute({List<PageRouteInfo>? children})
+      : super(
+          QuranReadingPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'QuranReadingPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const QuranReadingPage();
+    },
+  );
+}
+
+/// generated route for
+/// [QuranDetailsPageRoute]
+class QuranDetailsPageRoute extends PageRouteInfo<void> {
+  const QuranDetailsPageRoute({List<PageRouteInfo>? children})
+      : super(
+          QuranDetailsPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'QuranDetailsPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const QUranDetailsPage();
+    },
+  );
+}
+
+/// generated route for
+/// [QuranDiscussPageRoute]
+class QuranDiscussPageRoute extends PageRouteInfo<void> {
+  const QuranDiscussPageRoute({List<PageRouteInfo>? children})
+      : super(
+          QuranDiscussPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'QuranDiscussPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const DiscussVersePage();
+    },
+  );
+}
+
+/// generated route for
+/// [CommentOnAyaPageRoute]
+class CommentOnAyaPageRoute extends PageRouteInfo<void> {
+  const CommentOnAyaPageRoute({List<PageRouteInfo>? children})
+      : super(
+          CommentOnAyaPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommentOnAyaPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommentOnAyaPage();
+    },
+  );
+}
+
+/// generated route for
+/// [ReflectionsRoutePage]
+class ReflectionsRoutePage extends PageRouteInfo<void> {
+  const ReflectionsRoutePage({List<PageRouteInfo>? children})
+      : super(
+          ReflectionsRoutePage.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ReflectionsRoutePage';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const ReflectionPage();
+    },
+  );
+}
+
+
+/// generated route for
+/// [CommentSectionRoutePage]
+class CommentSectionRoutePage extends PageRouteInfo<void> {
+  const CommentSectionRoutePage({List<PageRouteInfo>? children})
+      : super(
+          CommentSectionRoutePage.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CommentSectionRoutePage';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const CommentSectionPage();
+    },
+  );
+}
+
+/// generated route for
+/// [RepliesPageRoute]
+class RepliesPageRoute extends PageRouteInfo<void> {
+  const RepliesPageRoute({List<PageRouteInfo>? children})
+      : super(
+          RepliesPageRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'RepliesPageRoute';
+
+  static PageInfo page = PageInfo(
+    name,
+    builder: (data) {
+      return const RepliesPage();
+    },
+  );
+}
