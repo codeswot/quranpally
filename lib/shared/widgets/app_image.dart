@@ -19,7 +19,8 @@ class AppImageWidget extends StatelessWidget {
   final double? height;
   final BoxFit fit;
 
-  bool get _isURL => reference.startsWith('http://') || reference.startsWith('https://');
+  bool get _isURL =>
+      reference.startsWith('http://') || reference.startsWith('https://');
   bool get _isSVG => reference.toLowerCase().endsWith('.svg');
 
   @override

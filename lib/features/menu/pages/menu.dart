@@ -146,7 +146,11 @@ class _MenuPageView extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   MenuFourCards(
-                    onTapped: () {},
+                    onTapped: () {
+                      context.router.replace(
+                        const GroupsPageRoute(),
+                      );
+                    },
                     icon: AppAssets.peopleIcon,
                     text: 'Groups & Communities',
                   ),

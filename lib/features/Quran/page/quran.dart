@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quranpally/config/asset/app_assets.dart';
 import 'package:quranpally/config/config.dart';
 import 'package:quranpally/config/theme/app_colors.dart';
 import 'package:quranpally/shared/enum/nav_bar_enums.dart';
